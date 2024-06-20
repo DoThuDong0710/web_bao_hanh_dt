@@ -1,0 +1,118 @@
+section{
+    padding: 2rem 6%;
+}
+
+.heading{
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 6rem;
+    position: fixed;
+    top: 9rem; /* Điều chỉnh khoảng cách từ đỉnh của trang */
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Đảm bảo hiển thị trên các phần tử khác */
+}
+.heading span{
+    color: var(--min-coler);
+    text-transform: uppercase;
+}
+
+.filer-container{
+    padding-bottom: 1.5rem;
+    background-color: #000000;
+    position: sticky;
+    padding: 1rem 0; /* Thêm padding nếu cần thiết */
+    position: fixed;
+    top: 19rem; /* Điều chỉnh khoảng cách từ đỉnh của trang */
+    width: 100%;
+    z-index: 100; /* Đảm bảo hiển thị trên các phần tử khác */
+}
+
+.filer-container .filter-options{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.filer-container .filter-options label {
+    margin-right: 4rem;
+}
+
+.filter-options input[type="checkbox"] {
+    margin-right: 0.7rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    vertical-align: middle;
+  }
+
+.filer-container .filter-options select {
+    color: #000000;
+    background-color:azure;
+    font-size: 1.9rem;
+    padding-right: 4rem;
+    margin-right: 1rem;
+}
+
+.filer-container .filter-options #filter-btn {
+    background:#f9d3d3;
+    font-size: 2.2rem;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 15rem; /* Điều chỉnh khoảng cách từ phía trên */
+}
+
+.box-container .box {
+    padding: 1.8rem;
+    text-align: center;
+    background: #646464;
+}
+
+.box-container .box img{
+    height: 9rem;
+}
+
+.box-container .box h3{
+    color: #ffffff;
+    font-size: 2.5rem;
+    padding: 1.7rem 0;
+    height: 9rem;
+}
+
+.box-container .box .value{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+}
+
+.box-container .box .value span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: #fff;
+}
+
+.box-container .box:hover{
+    background: #fff;
+}
+
+.box-container .box:hover > *{
+    color: var(--black);
+}
+
+.box-container .box:hover .phone span {
+    color: var(--black);
+}
+
+/* media queries */
+@media (max-width:991px){
+    section{
+        padding: 2rem;
+    }
+
+}

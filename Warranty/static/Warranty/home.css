@@ -1,0 +1,53 @@
+section{
+    padding: 2rem 7%;
+}
+.home{
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    background:url('../Warranty/background2.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 70rem;
+}
+
+.home .content h3{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.home .content p{
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 2rem 0;
+    color: #ffffff;
+}
+
+/* media queries */
+@media (max-width:991px){
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:828px){
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 5.8rem;
+    }
+
+    .home .content p{
+        font-size: 2.8rem;
+    }
+}
